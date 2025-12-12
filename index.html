@@ -73,15 +73,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 250%;
-    height: 250%;
+    width: 120%;
+    height: 120%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(255,0,0,0.5), transparent 70%);
-    filter: blur(35px);
+    background: radial-gradient(circle, rgba(255,0,0,0.45), transparent 70%);
+    filter: blur(20px);
     animation: ripple 2.4s infinite ease-out;
+    pointer-events: none;
     border-radius: 50%;
     z-index: -1;
-  }
+}
 
   @keyframes ripple {
     0% {
@@ -104,7 +105,10 @@
 
     <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。<br><br>すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
 
-    <h2>主な機能</h2>
+    </div>
+
+<div class="card">
+  <h2>主な機能</h2>
     <p><strong>グローバルチャット：</strong><br>複数のサーバーをつなげてメッセージを共有できます。サーバー間での情報交換や雑談が簡単に行えます。</p>
 
     <p><strong>経済＆ショップシステム：</strong><br>メッセージを送るとコインを獲得でき、貯めたコインでロールなどを購入可能です。サーバー内でゲーム感覚の交流が楽しめます。</p>
@@ -119,7 +123,10 @@
 
     <p><strong>DM送信コマンド：</strong><br>管理者が特定のメンバーに直接メッセージを送ることができます。サポートや連絡が簡単に行えます。</p>
 
-    <h2>ポイント</h2>
+    </div>
+
+<div class="card">
+  <h2>ポイント</h2>
     <p>すべての機能を統合済みで、これ一つでサーバー管理が可能。メンバーは遊びながら交流でき、管理者は安全に運営できます。Avanzare Mk.2でサーバー運営を次のレベルへ。</p>
 
     <div class="btn-container">
