@@ -31,6 +31,7 @@
     box-shadow: 0 0 25px red, inset 0 0 25px #ff0000;
     backdrop-filter: blur(6px);
     transform: perspective(800px) translateZ(40px);
+    margin-bottom: 40px;
   }
 
   p {
@@ -43,7 +44,6 @@
     justify-content: center;
     gap: 40px;
     margin-top: 45px;
-    position: relative;
   }
 
   .btn {
@@ -67,107 +67,36 @@
     transform: perspective(700px) translateZ(60px) translateY(-10px) scale(1.08);
     box-shadow: 0 0 35px red, inset 0 0 25px #ff3333;
   }
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120%;
-    height: 120%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgba(255,0,0,0.45), transparent 70%);
-    filter: blur(20px);
-    animation: ripple 2.4s infinite ease-out;
-    pointer-events: none;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-  @keyframes ripple {
-    0% {
-      transform: translate(-50%, -50%) scale(0.8);
-      opacity: 0.7;
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1.8);
-      opacity: 0;
-    }
-  }
 </style>
 </head>
 <body>
-  <h1></h1>
+  <h1>フニャBOT — セキュリティ特化ディスコードBOT</h1>
 
-  <div class="card">
-    <h1>Avanzare Mk.2多機能管理・便利BOT</h1>
-    <p>管理も交流も、これ一つ</p>
-
-    <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。<br><br>すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
-
-    </div>
-
-<div class="card">
-  <h2>主な機能</h2>
-    <p><strong>グローバルチャット：</strong><br>複数のサーバーをつなげてメッセージを共有できます。サーバー間での情報交換や雑談が簡単に行えます。</p>
-
-    <p><strong>経済＆ショップシステム：</strong><br>メッセージを送るとコインを獲得でき、貯めたコインでロールなどを購入可能です。サーバー内でゲーム感覚の交流が楽しめます。</p>
-
-    <p><strong>チケットサポート：</strong><br>ボタンひとつでチケットを作成でき、スタッフが効率的に対応できます。クローズ機能で不要なチャンネルを自動削除可能です。</p>
-
-    <p><strong>ロールパネル：</strong><br>ボタンで簡単にロールを付与・削除できます。メンバー自身で役割を管理可能です。</p>
-
-    <p><strong>招待リンクブロック：</strong><br>すべての招待リンクを検知し、保護処理を行います。</p>
-
-    <p><strong>アカウント認証：</strong><br>荒らしサーバー参加者は自動でブロック。認証済みユーザーにはロールを付与し、安心して参加できます。</p>
-
-    <p><strong>DM送信コマンド：</strong><br>管理者が特定のメンバーに直接メッセージを送ることができます。サポートや連絡が簡単に行えます。</p>
-
-    </div>
-
-<div class="card">
-  <h2>ポイント</h2>
-    <p>すべての機能を統合済みで、これ一つでサーバー管理が可能。メンバーは遊びながら交流でき、管理者は安全に運営できます。Avanzare Mk.2でサーバー運営を次のレベルへ。</p>
-
-    <div class="btn-container">
-      <a href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&permissions=8&integration_type=0&scope=bot" class="btn">BOTを招待</a>
-      <a href="https://discord.gg/Pq4Ku6JSmj" class="btn">サポートサーバー</a>
-    </div>
-
-    <p style="margin-top:40px; opacity:0.8;">© 2025 Avanzare Mk.2</p>
-  </div>
-
-  <div class="btn-container">
-    <a class="btn" href="https://discord.gg/Pq4Ku6JSmj" target="_blank">サポートサーバー</a>
-    <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&permissions=8&integration_type=0&scope=bot" target="_blank">BOT を導入</a>
-  </div>
   <div class="card">
     <h1>Avanzare Mk.2</h1>
     <p>管理も交流も、これ一つ</p>
+    <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。<br><br>
+    すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
+  </div>
 
-    <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
-
+  <div class="card">
     <h2>主な機能</h2>
-    <p><strong>グローバルチャット：</strong><br>複数のサーバーをつなげてメッセージを共有できます。サーバー間での情報交換や雑談が簡単に行えます。</p>
+    <p><strong>グローバルチャット：</strong><br>複数のサーバーをつなげてメッセージを共有できます。</p>
+    <p><strong>経済＆ショップシステム：</strong><br>メッセージでコインを獲得し、ロールなどを購入可能。</p>
+    <p><strong>チケットサポート：</strong><br>ボタンでチケットを作成し、スタッフが効率よく対応。</p>
+    <p><strong>ロールパネル：</strong><br>ボタンでロール付与・削除。</p>
+    <p><strong>招待リンクブロック：</strong><br>すべての招待リンクを検知して保護。</p>
+    <p><strong>アカウント認証：</strong><br>荒らし参加者を自動ブロックし安全性向上。</p>
+    <p><strong>DM送信コマンド：</strong><br>管理者が特定メンバーへDM送信可能。</p>
+  </div>
 
-    <p><strong>経済＆ショップシステム：</strong><br>メッセージを送るとコインを獲得でき、貯めたコインでロールなどを購入可能です。サーバー内でゲーム感覚の交流が楽しめます。</p>
-
-    <p><strong>チケットサポート：</strong><br>ボタンひとつでチケットを作成でき、スタッフが効率的に対応できます。クローズ機能で不要なチャンネルを自動削除可能です。</p>
-
-    <p><strong>ロールパネル：</strong><br>ボタンで簡単にロールを付与・削除できます。メンバー自身で役割を管理可能です。</p>
-
-    <p><strong>招待リンクブロック：</strong><br>すべての招待リンクを検知し、保護処理を行います。</p>
-
-    <p><strong>アカウント認証：</strong><br>荒らしサーバー参加者は自動でブロック。認証済みユーザーにはロールを付与し、安心して参加できます。</p>
-
-    <p><strong>DM送信コマンド：</strong><br>管理者が特定のメンバーに直接メッセージを送ることができます。サポートや連絡が簡単に行えます。</p>
-
+  <div class="card">
     <h2>ポイント</h2>
-    <p>すべての機能を統合済みで、これ一つでサーバー管理が可能。メンバーは遊びながら交流でき、管理者は安全に運営できます。Avanzare Mk.2でサーバー運営を次のレベルへ。</p>
+    <p>すべての機能が統合されているため、これ一つで安全かつ効率的なサーバー運営が可能。</p>
 
     <div class="btn-container">
       <a href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&permissions=8&integration_type=0&scope=bot" class="btn">BOTを招待</a>
-      <a href="https://discord.gg/qD5WPMEQdh" class="btn">サポートサーバー</a>
+      <a href="https://discord.gg/uD8ZeTFMad" class="btn">サポートサーバー</a>
     </div>
 
     <p style="margin-top:40px; opacity:0.8;">© 2025 Avanzare Mk.2</p>
