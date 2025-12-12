@@ -1,150 +1,169 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanzare Mk.2</title>
+<meta charset="UTF-8" />
+<title>Avanzare Mk.2 宣伝ページ</title>
+<style>
+  body {
+    margin: 0;
+    background: radial-gradient(circle at center, #ff0000 0%, #000000 70%);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    overflow-x: hidden;
+  }
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0a0a0a;
-            color: #e5e5e5;
-            font-family: "Segoe UI", sans-serif;
-            line-height: 1.8;
-        }
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    text-shadow: 0 0 25px red, 0 0 40px #ff3333;
+    transform: perspective(600px) translateZ(40px);
+  }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+  .card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.55);
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 25px red, inset 0 0 25px #ff0000;
+    backdrop-filter: blur(6px);
+    transform: perspective(800px) translateZ(40px);
+  }
 
-        h1, h2, h3 {
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
+  p {
+    font-size: 1.35rem;
+    line-height: 1.7;
+  }
 
-        h1 {
-            font-size: 42px;
-            margin-bottom: 5px;
-        }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 45px;
+    position: relative;
+  }
 
-        .subtitle {
-            font-size: 18px;
-            color: #cccccc;
-            margin-bottom: 30px;
-        }
+  .btn {
+    padding: 18px 45px;
+    font-size: 1.25rem;
+    color: white;
+    background: rgba(255,0,0,0.25);
+    border: 2px solid red;
+    border-radius: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    backdrop-filter: blur(4px);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 20px red, inset 0 0 15px #ff0000;
+    transform: perspective(700px) translateZ(30px);
+  }
 
-        .section {
-            margin-top: 50px;
-            padding: 30px;
-            background: rgba(255,255,255,0.04);
-            border-left: 4px solid #4db8ff;
-            border-radius: 8px;
-        }
+  .btn:hover {
+    transform: perspective(700px) translateZ(60px) translateY(-10px) scale(1.08);
+    box-shadow: 0 0 35px red, inset 0 0 25px #ff3333;
+  }
 
-        /* 招待ボタン */
-        .invite-btn {
-            display: inline-block;
-            padding: 15px 28px;
-            margin-top: 20px;
-            background: linear-gradient(135deg, #007cff, #00b7ff);
-            color: #fff;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: 0.25s;
-            box-shadow: 0 0 15px rgba(0, 140, 255, 0.6);
-        }
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250%;
+    height: 250%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255,0,0,0.5), transparent 70%);
+    filter: blur(35px);
+    animation: ripple 2.4s infinite ease-out;
+    border-radius: 50%;
+    z-index: -1;
+  }
 
-        .invite-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(0, 180, 255, 0.8);
-        }
-
-        h3 {
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .footer {
-            margin-top: 50px;
-            text-align: center;
-            color: #777;
-            font-size: 14px;
-        }
-
-    </style>
+  @keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.8);
+      opacity: 0;
+    }
+  }
+</style>
 </head>
-
 <body>
-<div class="container">
+  <h1>フニャBOT — セキュリティ特化ディスコードBOT</h1>
 
+  <div class="card">
     <h1>Avanzare Mk.2</h1>
-    <p class="subtitle">管理も交流も、これ一つ</p>
+    <p>管理も交流も、これ一つ</p>
 
-    <!-- 招待ボタン（リンクを差し替えて使ってください） -->
-    <a href="YOUR_INVITE_LINK_HERE" class="invite-btn">BOTを招待</a>
+    <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。<br><br>すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
 
-    <div class="section">
-        <h2>Avanzare Mk.2 – サーバー運営を次のレベルへ</h2>
-        <p>
-            Avanzare Mk.2は、サーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。<br>
-            すべての機能がひとつにまとまり、このBOTだけでサーバー管理とコミュニティ活動を同時に進められます。
-        </p>
+    <h2>主な機能</h2>
+    <p><strong>グローバルチャット：</strong><br>複数のサーバーをつなげてメッセージを共有できます。サーバー間での情報交換や雑談が簡単に行えます。</p>
+
+    <p><strong>経済＆ショップシステム：</strong><br>メッセージを送るとコインを獲得でき、貯めたコインでロールなどを購入可能です。サーバー内でゲーム感覚の交流が楽しめます。</p>
+
+    <p><strong>チケットサポート：</strong><br>ボタンひとつでチケットを作成でき、スタッフが効率的に対応できます。クローズ機能で不要なチャンネルを自動削除可能です。</p>
+
+    <p><strong>ロールパネル：</strong><br>ボタンで簡単にロールを付与・削除できます。メンバー自身で役割を管理可能です。</p>
+
+    <p><strong>招待リンクブロック：</strong><br>すべての招待リンクを検知し、保護処理を行います。</p>
+
+    <p><strong>アカウント認証：</strong><br>荒らしサーバー参加者は自動でブロック。認証済みユーザーにはロールを付与し、安心して参加できます。</p>
+
+    <p><strong>DM送信コマンド：</strong><br>管理者が特定のメンバーに直接メッセージを送ることができます。サポートや連絡が簡単に行えます。</p>
+
+    <h2>ポイント</h2>
+    <p>すべての機能を統合済みで、これ一つでサーバー管理が可能。メンバーは遊びながら交流でき、管理者は安全に運営できます。Avanzare Mk.2でサーバー運営を次のレベルへ。</p>
+
+    <div class="btn-container">
+      <a href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&permissions=8&integration_type=0&scope=bot" class="btn">BOTを招待</a>
+      <a href="https://discord.gg/Pq4Ku6JSmj" class="btn">サポートサーバー</a>
     </div>
 
-    <div class="section">
-        <h2>主な機能</h2>
+    <p style="margin-top:40px; opacity:0.8;">© 2025 Avanzare Mk.2</p>
+  </div>
 
-        <h3>グローバルチャット</h3>
-        <p>複数サーバー間でメッセージを共有し、情報交換や雑談がスムーズに行えます。</p>
+  <div class="btn-container">
+    <a class="btn" href="https://discord.gg/Pq4Ku6JSmj" target="_blank">サポートサーバー</a>
+    <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&permissions=8&integration_type=0&scope=bot" target="_blank">BOT を導入</a>
+  </div>
+  <div class="card">
+    <h1>Avanzare Mk.2</h1>
+    <p>管理も交流も、これ一つ</p>
 
-        <h3>経済＆ショップシステム</h3>
-        <p>メッセージ送信でコインを獲得し、ロールなどを購入できます。<br>
-        ゲーム感覚の交流がサーバー内で広がります。</p>
+    <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
 
-        <h3>チケットサポート</h3>
-        <p>ボタンひとつでチケット作成。<br>
-        クローズ時には不要チャンネルを自動削除し、スタッフ対応を効率化します。</p>
+    <h2>主な機能</h2>
+    <p><strong>グローバルチャット：</strong><br>複数のサーバーをつなげてメッセージを共有できます。サーバー間での情報交換や雑談が簡単に行えます。</p>
 
-        <h3>ロールパネル</h3>
-        <p>ボタンでロールを付与・削除可能。<br>
-        メンバー自身が役割を管理できます。</p>
+    <p><strong>経済＆ショップシステム：</strong><br>メッセージを送るとコインを獲得でき、貯めたコインでロールなどを購入可能です。サーバー内でゲーム感覚の交流が楽しめます。</p>
 
-        <h3>招待リンクブロック</h3>
-        <p>
-            すべてのDiscord招待リンクを自動検知し、投稿された瞬間に即時ブロックします。<br>
-            荒らしリンクだけでなく通常の招待リンクも完全に遮断することで、リンク禁止環境を実現します。<br>
-            機能のオン／オフは手動で切り替え可能。<br>
-            また、検出対象外にしたいチャンネルの追加・削除にも対応しており、柔軟な運用が可能です。
-        </p>
+    <p><strong>チケットサポート：</strong><br>ボタンひとつでチケットを作成でき、スタッフが効率的に対応できます。クローズ機能で不要なチャンネルを自動削除可能です。</p>
 
-        <h3>アカウント認証</h3>
-        <p>荒らしサーバー参加者を自動ブロックし、認証済みメンバーにはロールを付与します。</p>
+    <p><strong>ロールパネル：</strong><br>ボタンで簡単にロールを付与・削除できます。メンバー自身で役割を管理可能です。</p>
 
-        <h3>DM送信コマンド</h3>
-        <p>管理者が特定メンバーに直接DMを送信できます。<br>
-        サポートや連絡がスムーズに行えます。</p>
+    <p><strong>招待リンクブロック：</strong><br>すべての招待リンクを検知し、保護処理を行います。</p>
+
+    <p><strong>アカウント認証：</strong><br>荒らしサーバー参加者は自動でブロック。認証済みユーザーにはロールを付与し、安心して参加できます。</p>
+
+    <p><strong>DM送信コマンド：</strong><br>管理者が特定のメンバーに直接メッセージを送ることができます。サポートや連絡が簡単に行えます。</p>
+
+    <h2>ポイント</h2>
+    <p>すべての機能を統合済みで、これ一つでサーバー管理が可能。メンバーは遊びながら交流でき、管理者は安全に運営できます。Avanzare Mk.2でサーバー運営を次のレベルへ。</p>
+
+    <div class="btn-container">
+      <a href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&permissions=8&integration_type=0&scope=bot" class="btn">BOTを招待</a>
+      <a href="https://discord.gg/Pq4Ku6JSmj" class="btn">サポートサーバー</a>
     </div>
 
-    <div class="section">
-        <h2>ポイント</h2>
-        <p>
-            すべての機能が統合され、このBOT一つでサーバー管理が完結します。<br>
-            メンバーは交流を楽しみ、管理者は安全で快適な運営を実現できます。
-        </p>
-        <p><strong>Avanzare Mk.2でサーバー運営を次のステージへ。</strong><br>
-        導入は簡単。今すぐBOTを招待して始めましょう。</p>
-    </div>
-
-    <div class="footer">© 2025 Avanzare Mk.2</div>
-
-</div>
+    <p style="margin-top:40px; opacity:0.8;">© 2025 Avanzare Mk.2</p>
+  </div>
 </body>
 </html>
