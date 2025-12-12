@@ -1,133 +1,150 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avanzare Mk.2</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.8;
-    }
-    header {
-      background-color: #5865F2;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 1.5em;
-    }
-    header a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: white;
-      color: #5865F2;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 15px;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    footer {
-      background-color: #e0e0e0;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    a {
-      color: #5865F2;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avanzare Mk.2</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255,255,255,0.04);
+            border-left: 4px solid #4db8ff;
+            border-radius: 8px;
+        }
+
+        /* 招待ボタン */
+        .invite-btn {
+            display: inline-block;
+            padding: 15px 28px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, #007cff, #00b7ff);
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.25s;
+            box-shadow: 0 0 15px rgba(0, 140, 255, 0.6);
+        }
+
+        .invite-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(0, 180, 255, 0.8);
+        }
+
+        /* 各項目タイトル */
+        h3 {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+    </style>
 </head>
+
 <body>
-  <header>
+<div class="container">
+
     <h1>Avanzare Mk.2</h1>
-    <p>管理も交流も、これ一つ</p>
-    <a href="https://discord.com/oauth2/authorize?client_id=1445209748176896091&scope=bot">BOTを招待</a>
-  </header>
+    <p class="subtitle">管理も交流も、これ一つ</p>
 
-  <section>
-    <h2>Avanzare Mk.2 – サーバー運営を次のレベルへ</h2>
-    <p>Avanzare Mk.2はサーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。<br>
-    すべての機能が統合されているので、これ一つでサーバー管理と交流を同時に行えます。</p>
+    <!-- 招待ボタン -->
+    <a href="YOUR_INVITE_LINK_HERE" class="invite-btn">BOTを招待</a>
 
-    <h2>主な機能</h2>
-    <ul>
-      <li>
-        <strong>グローバルチャット：</strong><br>
-        複数のサーバーをつなげてメッセージを共有できます。<br>
-        サーバー間での情報交換や雑談が簡単に行えます。
-      </li>
-      <li>
-        <strong>経済＆ショップシステム：</strong><br>
-        メッセージを送るとコインを獲得でき、貯めたコインでロールなどを購入可能です。<br>
-        サーバー内でゲーム感覚の交流が楽しめます。
-      </li>
-      <li>
-        <strong>チケットサポート：</strong><br>
-        ボタンひとつでチケットを作成でき、スタッフが効率的に対応できます。<br>
-        クローズ機能で不要なチャンネルを自動削除可能です。
-      </li>
-      <li>
-        <strong>ロールパネル：</strong><br>
-        ボタンで簡単にロールを付与・削除できます。<br>
-        メンバー自身で役割を管理可能です。
-      </li>
-      <li>
-        <strong>招待リンク監視：</strong><br>
-        不正な招待リンクを自動検知してタイムアウト。<br>
-        サーバーの安全性を簡単に維持できます。
-      </li>
-      <li>
-        <strong>アカウント認証：</strong><br>
-        禁止サーバー参加者は自動でブロック。<br>
-        認証済みユーザーにはロールを付与し、安心して参加できます。
-      </li>
-      <li>
-        <strong>DM送信コマンド：</strong><br>
-        管理者が特定のメンバーに直接メッセージを送ることができます。<br>
-        サポートや連絡が簡単に行えます。
-      </li>
-    </ul>
+    <div class="section">
+        <h2>Avanzare Mk.2 – サーバー運営を次のレベルへ</h2>
+        <p>
+            Avanzare Mk.2は、サーバー運営を効率化し、メンバー間の交流を最大化する統合型Discord BOTです。  
+            すべての機能がひとつにまとまり、このBOTだけでサーバー管理とコミュニティ活動を同時に進められます。
+        </p>
+    </div>
 
-    <h2>ポイント</h2>
-    <p>すべての機能を統合済みで、これ一つでサーバー管理が可能。<br>
-    メンバーは遊びながら交流でき、管理者は安全に運営できます。<br>
-    Avanzare Mk.2でサーバー運営を次のレベルへ。<br>
-    導入は簡単、今すぐBOTを招待して始めましょう。</p>
-  </section>
+    <div class="section">
+        <h2>主な機能</h2>
 
-  <footer>
-    <p>© 2025 Avanzare Mk.2</p>
-    <p><a href="https://discord.gg/tbYgvbVXYr">サポートサーバーへ</a></p>
-  </footer>
+        <h3>グローバルチャット</h3>
+        <p>複数サーバー間でメッセージを共有し、情報交換や雑談がスムーズに行えます。</p>
+
+        <h3>経済＆ショップシステム</h3>
+        <p>メッセージ送信でコインを獲得し、ロールなどを購入できます。  
+        サーバー内でゲーム感覚の交流が広がります。</p>
+
+        <h3>チケットサポート</h3>
+        <p>ボタンひとつでチケット作成。  
+        クローズ時には不要チャンネルを自動削除し、管理効率を最大化します。</p>
+
+        <h3>ロールパネル</h3>
+        <p>ボタンでロールを付与・削除可能。  
+        メンバー自身が役割を管理できます。</p>
+
+        <h3>招待リンクブロック</h3>
+        <p>
+            全ての招待リンクを監視し、不正・荒らしサーバーの招待リンクを検知すると保護処理を行います。  
+            機能のオン／オフを手動切り替え可能。  
+            検出されないチャンネルの追加・削除にも対応しています。
+        </p>
+
+        <h3>アカウント認証</h3>
+        <p>荒らしサーバー参加者を自動ブロックし、認証済みメンバーにはロールを付与します。</p>
+
+        <h3>DM送信コマンド</h3>
+        <p>管理者が特定のメンバーへ直接DMを送信できます。</p>
+    </div>
+
+    <div class="section">
+        <h2>ポイント</h2>
+        <p>
+            すべての機能が統合されているため、このBOT一つでサーバー管理が完結します。  
+            メンバーは交流を楽しみ、管理者は安全で快適な運営を行えます。
+        </p>
+        <p><strong>Avanzare Mk.2でサーバー運営を次のステージへ。</strong><br>
+        導入は簡単。今すぐBOTを招待して始めましょう。</p>
+    </div>
+
+    <div class="footer">© 2025 Avanzare Mk.2</div>
+
+</div>
 </body>
 </html>
